@@ -70,7 +70,7 @@ echo.
 goto menu
 
 :wallet_uninstall
-del /f/q "C:\Users\%USERNAME%\Desktop\BitcoinZ Wallet.lnk
+del /f/q "C:\Users\%USERNAME%\Desktop\BitcoinZ Wallet.lnk"
 RMDIR /S /Q "C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ-Wallet"
 echo.
 echo %version% deleted successfully!
@@ -87,7 +87,7 @@ echo.
 goto menu
 
 :uninstall_all
-del /f/q "C:\Users\%USERNAME%\Desktop\BitcoinZ Wallet.lnk
+del /f/q "C:\Users\%USERNAME%\Desktop\BitcoinZ Wallet.lnk"
 %cd%\data\7z.exe a "%cd%\wallet.dat_backup_%DATE_TIME%.7z" "C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ\wallet.dat" -mx9
 RMDIR /S /Q "C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ-Wallet"
 RMDIR /S /Q "C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ"
