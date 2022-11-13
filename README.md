@@ -9,6 +9,6 @@ If it doesn't work, check it
 
 
 
-Address to tip BTCZ: t1NY5umfYHDAng3dHe4qWvtrRxSa4BKASRj
+Address to tip BTCZ: t1Jfjbz9v6BDRNbVLLi9qLe3kQhfXy7p2Sd
 
 Thank you for using BTCZTools and supporting
