@@ -16,6 +16,7 @@ echo [6] Backup wallet.dat
 echo [7] Backup wallet.dat with a password
 echo [8] Run command line BitcoinZ Node
 echo [9] Run reindex blockchain
+echo.
 set /P input=""
 if %input% == 1 (goto wallet_install)
 if %input% == 2 (goto wallet_uninstall)
@@ -72,6 +73,7 @@ goto menu
 :wallet_uninstall
 del /f/q "C:\Users\%USERNAME%\Desktop\BitcoinZ Wallet.lnk"
 RMDIR /S /Q "C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ-Wallet"
+RMDIR /S /Q "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet"
 echo.
 echo %version% deleted successfully!
 echo.
