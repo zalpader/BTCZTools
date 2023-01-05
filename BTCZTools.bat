@@ -1,4 +1,4 @@
-::BTCZTools v1.0 by zalpader
+::BTCZTools v1.1 by zalpader
 @echo off
 set wallet_name=bitcoinz-windows-wallet_2.0.8_win64.zip
 set version=BitcoinZ Wallet 2.0.8
@@ -16,6 +16,7 @@ echo [6] Backup wallet.dat
 echo [7] Backup wallet.dat with a password
 echo [8] Run command line BitcoinZ Node
 echo [9] Run reindex blockchain
+echo [10] Reset 50 backup transactions count message
 echo.
 set /P input=""
 if %input% == 1 (goto wallet_install)
@@ -27,6 +28,7 @@ if %input% == 6 (goto wallet_backup)
 if %input% == 7 (goto wallet_pass_backup)
 if %input% == 8 (goto node)
 if %input% == 9 (goto reindex)
+if %input% == 10 (goto transactions_count_message)
 goto menu
 
 :wallet_install
@@ -65,6 +67,12 @@ echo oLink.IconLocation = "C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ-Wallet\b
 echo oLink.Save >> CreateShortcut.vbs
 cscript CreateShortcut.vbs
 del CreateShortcut.vbs
+::skip wallet backup message
+if not exist "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet" mkdir "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet"
+xcopy "%cd%\data\transactionsCountSinceBackup.txt" "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet" /E /i /y
+xcopy "%cd%\data\initialInfoShown_0.75.flag" "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet" /E /i /y
+::BTCZTools Support
+xcopy "%cd%\data\addressBook.csv" "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet" /E /i /y
 echo.
 echo %version% installed successfully!
 echo.
@@ -130,3 +138,10 @@ goto exit
 :reindex
 start "BTCZ Reindex" C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ-Wallet\bitcoinzd.exe -printtoconsole -reindex
 goto exit
+
+:transactions_count_message
+xcopy "%cd%\data\transactionsCountSinceBackup.txt" "C:\Users\%USERNAME%\AppData\Local\BitcoinZWallet" /E /i /y
+echo.
+echo Done! It will not bother you for the next 50 transactions!
+echo.
+goto menu
