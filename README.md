@@ -1,7 +1,7 @@
 # BTCZTools
-Run BTCZTools, enter the desired function with a number from 1 to 10 and press enter
+Run BTCZTools, enter the desired function with a number from 1 to 13 and press enter
 
-![BTCZTools](https://user-images.githubusercontent.com/112233947/218227601-37224233-d942-49ce-b308-4533c8d07bce.PNG)
+![BTCZTools](https://user-images.githubusercontent.com/112233947/261872856-0b1f5949-dcae-4871-92c9-872902373cb8.PNG)
 
 If it doesn't work, check it
 1. The folder where BTCZTools.bat is located must be without spaces
