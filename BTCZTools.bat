@@ -1,16 +1,16 @@
-::BTCZTools v1.4 by zalpader
+::BTCZTools v1.4a by zalpader
 @echo off
 set conf=C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ\bitcoinz.conf
-set version=BitcoinZ Wallet 2.0.8
-set wallet_name=bitcoinz-windows-wallet_2.0.8_win64.zip
-set wallet_url=https://github.com/btcz/bitcoinz-wallet/releases/download/v2.0.8/bitcoinz-windows-wallet_2.0.8_win64.zip
+set version=BitcoinZ Wallet 2.0.8-EXT
+set wallet_name=bitcoinz-windows-wallet_2.0.8_EXT_win64.zip
+set wallet_url=https://github.com/zalpader/bitcoinz-windows-wallet_2.0.8_EXT/releases/download/2.0.8-EXT/bitcoinz-windows-wallet_2.0.8_EXT_win64.zip
 set blockchain_folder=C:\Users\%USERNAME%\AppData\Roaming\BitcoinZ
-set blockchain_name_1=BitcoinZ_Blockchain_Backup_2023.07.21_03-59-41.7z
-set blockchain_url_1=https://link.storjshare.io/s/jwtbc6fcdkwmb27xwgju6o3r2y3q/btcz/BitcoinZ_Blockchain_Backup_2023.07.21_03-59-41.7z?download=1
-set blockchain_name_2=BitcoinZ_Blockchain_Backup_2023.04.28_18-57-58.7z
-set blockchain_url_2=https://link.storjshare.io/s/jvdxderwlpxyjfic6ozwjhbrgnqa/btcz/BitcoinZ_Blockchain_Backup_2023.04.28_18-57-58.7z?download=1
-set blockchain_name_3=
-set blockchain_url_3=
+set blockchain_name_1=BitcoinZ_Blockchain_Backup_2023.12.20_14-38-31.7z
+set blockchain_url_1=https://link.storjshare.io/s/jvhzhworj7ry3fnpbqfdr4ybhosq/btcz/BitcoinZ_Blockchain_Backup_2023.12.20_14-38-31.7z?download=1
+set blockchain_name_2=BitcoinZ_Blockchain_Backup_2023.07.21_03-59-41.7z
+set blockchain_url_2=https://link.storjshare.io/s/jwtbc6fcdkwmb27xwgju6o3r2y3q/btcz/BitcoinZ_Blockchain_Backup_2023.07.21_03-59-41.7z?download=1
+set blockchain_name_3=BitcoinZ_Blockchain_Backup_2023.04.28_18-57-58.7z
+set blockchain_url_3=https://link.storjshare.io/s/jvdxderwlpxyjfic6ozwjhbrgnqa/btcz/BitcoinZ_Blockchain_Backup_2023.04.28_18-57-58.7z?download=1
 set blockchain_name_4=
 set blockchain_url_4=
 set blockchain_name_5=
